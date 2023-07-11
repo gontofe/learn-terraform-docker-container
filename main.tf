@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "hallmichaelr"
+    workspaces {
+      name = "learn-terraform-docker-container"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
